@@ -1,5 +1,7 @@
 package org.shauryabahl08;
 
+import java.sql.SQLOutput;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Calculator {
@@ -18,14 +20,58 @@ public class Calculator {
      */
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in); // This is the way to take input from user
-        System.out.println("Enter the symbol (+, -, *, /, %): ");
-        String symbol = scanner.nextLine(); // here we are taking the input using nextLine()
-        System.out.println("Selected Symbol " + symbol);
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Please choose your operation: (+,-,*,/,%)");
+        String operator = sc.next();
+        System.out.println("Your operator is: " + operator);
+
+        System.out.println("Enter value1: ");
+        double value1 = sc.nextDouble();
+        System.out.println("Enter value2: ");
+        double value2 = sc.nextDouble();
 
 
-        if (symbol.equals("+")) {
-            System.out.println("Addition");
+        if (Objects.equals(operator, "+")){
+            System.out.println("Result: " + (value1 + value2));
         }
+        else if (Objects.equals(operator, "-")) {
+            System.out.println("Result: " + (value1 - value2));
+        }
+        else if (Objects.equals(operator, "*")) {
+            System.out.println("Result: " + (value1 * value2));
+        }
+        else if (Objects.equals(operator, "/")) {
+
+            System.out.println("Result: " + (value1 / value2));
+        }
+        else if (Objects.equals(operator, "%")) {
+            System.out.println("Result: " + (value1 % value2));
+        }
+        else {
+            System.out.println("Operator Not Valid!");
+        }
+        switch (operator) {
+            case "+":
+                System.out.println("Result: " + (value1 + value2));
+                break;
+            case "-":
+                System.out.println("Result: " + (value1 - value2));
+                break;
+            case "*":
+                System.out.println("Result: " + (value1 * value2));
+                break;
+            case "/":
+                System.out.println("Result: " + (value1 / value2));
+                break;
+            case "%":
+                System.out.println("Result: " + (value1 % value2));
+                break;
+            default:
+                System.out.println("Operator Not Valid!");
+                break;
+        }
+
     }
+
 }
+
