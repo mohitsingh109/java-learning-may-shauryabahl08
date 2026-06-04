@@ -1,4 +1,5 @@
 package org.shauryabahl08.assignment;
+import java.util.Scanner;
 
 public class Shopping {
     /*
@@ -33,4 +34,30 @@ public class Shopping {
      * Final Amount = 2000
      *
      */
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Product name is: ");
+        String productName = sc.nextLine();
+        System.out.println("Product price is: ");
+        double productPrice = sc.nextDouble();
+        System.out.println("Product quantity is: ");
+        int productQuantity = sc.nextInt();
+        double subtotal = productPrice * productQuantity;
+        System.out.println("Your subtotal is " + subtotal);
+
+        System.out.println("The name of your product is "+productName+ " and you chose " + productQuantity+ "of them, so your subtotal is " + subtotal);
+        double discount = 0;
+
+        if (subtotal > 10000){
+            discount = subtotal * 0.15;
+        }
+        else if (subtotal > 5000){
+            discount = subtotal * 0.1;
+        }
+        System.out.println("Your discount is: " + discount);
+        double finalAmount =  subtotal - discount;
+        System.out.println("Your final payable amount is: " + finalAmount);
+    }
 }
+
