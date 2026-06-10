@@ -1,5 +1,7 @@
 package org.shauryabahl08.assignment;
 
+import java.util.Scanner;
+
 public class ShoppingV2 {
 
     /*
@@ -39,4 +41,36 @@ public class ShoppingV2 {
      * Final Amount = 3500
      *
      */
+    public static void main(String[] arg){
+        Scanner sc = new Scanner (System.in);
+        System.out.println("How many products do you want to purchase?: ");
+        int numberOfProducts = sc.nextInt();
+        double grandTotal = 0.0;
+       if(numberOfProducts > 0){
+           for(int i = 1; i <= numberOfProducts; i++){
+               sc.nextLine();
+               System.out.println("What is the name of your product? ");
+               String nameOfProduct = sc.nextLine();
+               System.out.println("What is the price of your product? ");
+               double priceOfProduct = sc.nextDouble();
+               System.out.println("Enter the quantity of products: ");
+               int quantityOfProduct = sc.nextInt();
+               System.out.println("The product total is: " + (priceOfProduct * quantityOfProduct));
+               grandTotal += priceOfProduct * quantityOfProduct;
+           }
+           System.out.println("Your grand total is: " + grandTotal);
+           double discount = 0;
+           if (grandTotal >= 10000){
+               discount = grandTotal * 0.15;
+           }
+           else if (grandTotal>= 5000) {
+               discount = grandTotal * 0.1;
+           }
+           System.out.println("Your discount amount is: " + discount);
+           System.out.println("Your amount to be payed is: " + (grandTotal - discount));
+       }
+       else {
+           System.out.println("Your value is invalid");
+       }
+    }
 }

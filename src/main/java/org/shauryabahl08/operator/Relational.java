@@ -16,7 +16,7 @@ public class Relational {
         System.out.println(age >= 20);
         System.out.println(age <= 20);
         System.out.println(age == 20); //True
-        System.out.println(age != 20); // Ture
+        System.out.println(age != 20); // True
         System.out.println('A' == 'A'); // True
 
     }

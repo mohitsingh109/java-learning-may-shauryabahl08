@@ -46,7 +46,7 @@ public class LoopsInJava {
         Scanner sc = new Scanner(System.in);
         System.out.println("How many number you need to enter?");
         int count = sc.nextInt(); // 5
-        int sum = 20;
+        int sum = 0;
         // 0 < count <= 10 - Python support this
         if (count > 0 && count <= 10) {
             for (int i = 1; i <= count; i++) {
