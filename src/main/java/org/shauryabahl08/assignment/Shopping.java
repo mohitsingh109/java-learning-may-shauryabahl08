@@ -1,5 +1,4 @@
 package org.shauryabahl08.assignment;
-import java.util.Scanner;
 
 public class Shopping {
     /*
@@ -8,56 +7,35 @@ public class Shopping {
      * Create a Java program that works like a shopping bill calculator.
      *
      * Requirements:
-     * 1. For product:
+     * 1. Ask the user how many products they want to purchase.
+     * 2. For each product:
      *      - Enter product name.
      *      - Enter product price.
      *      - Enter quantity.
-     * 2. Calculate the total cost of the product.
-     * 3. Apply discount rules:
+     * 3. Calculate the total cost of each product.
+     * 4. Calculate the grand total of all products.
+     * 5. Apply discount rules:
      *      - If bill is above ₹5000, give 10% discount.
      *      - If bill is above ₹10000, give 15% discount.
-     * 4. Display:
-     *      - Product detail
+     * 6. Display:
+     *      - Product details
      *      - Subtotal
      *      - Discount amount
      *      - Final payable amount
      *
      * Example:
      *
-     * Product Name: Laptop Bag
+     * Product 1: Laptop Bag
      * Price: 1000
      * Quantity: 2
      *
+     * Product 2: Mouse
+     * Price: 500
+     * Quantity: 3
      *
-     * Subtotal = 2000
+     * Subtotal = 3500
      * Discount = 0
-     * Final Amount = 2000
+     * Final Amount = 3500
      *
      */
-    public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Product name is: ");
-        String productName = sc.nextLine();
-        System.out.println("Product price is: ");
-        double productPrice = sc.nextDouble();
-        System.out.println("Product quantity is: ");
-        int productQuantity = sc.nextInt();
-        double subtotal = productPrice * productQuantity;
-        System.out.println("Your subtotal is " + subtotal);
-
-        System.out.println("The name of your product is "+productName+ " and you chose " + productQuantity+ "of them, so your subtotal is " + subtotal);
-        double discount = 0;
-
-        if (subtotal > 10000){
-            discount = subtotal * 0.15;
-        }
-        else if (subtotal > 5000){
-            discount = subtotal * 0.1;
-        }
-        System.out.println("Your discount is: " + discount);
-        double finalAmount =  subtotal - discount;
-        System.out.println("Your final payable amount is: " + finalAmount);
-    }
 }
-
