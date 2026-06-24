@@ -3,6 +3,11 @@ package org.shauryabahl08.assignment;
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
+/**
+ *
+ * Move display menu, user input, each choice code into a function
+ */
+
 public class SmartCityManagementSystem {
     public static void main(String [] args){
         Scanner sc = new Scanner(System.in);

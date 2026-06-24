@@ -26,6 +26,9 @@ public class Test {
         int value = Calculator.sub(50, 32);
         System.out.println(value);
 
+        float floatSum = Calculator.addFloat(10.5f, 20.5f, 30.5f);
+        System.out.println(floatSum);
+
     }
 
     // how to define a function?

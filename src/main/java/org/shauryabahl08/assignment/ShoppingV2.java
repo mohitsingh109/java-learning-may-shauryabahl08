@@ -74,3 +74,18 @@ public class ShoppingV2 {
        }
     }
 }
+
+/**
+ *
+ * 1. Move user input for each product into a function
+ *   => this will return the total cost of the product
+ *   public static double getProductTotalCost(Scanner sc) {
+ *      // code add lines from 51 to 58
+ *   }
+ *
+ * 2. Add a function that job is to apply the discount
+ *     => public static double applyDiscount(double grandTotal) {
+ *         //code
+ *     }
+ *
+ */

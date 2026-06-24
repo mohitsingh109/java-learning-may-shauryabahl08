@@ -7,6 +7,11 @@ public class Calculator {
         return result; // 60
     }
 
+    public static float addFloat(float a, float b, float c) {
+        float result = a + b + c;
+        return result;
+    }
+
     public static int sub(int a, int b) {
         int result = a - b;
         return result;
