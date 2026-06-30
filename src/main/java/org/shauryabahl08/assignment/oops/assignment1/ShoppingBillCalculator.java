@@ -14,7 +14,8 @@ public class ShoppingBillCalculator {
         double subtotal = calculateSubtotal(price, quantity);
         double gst = calculateGST(subtotal);
         double finalAmount = calculateFinalAmount(subtotal, gst);
-
+        // this is the point where I've all the field required by printBill
+        printBill(productName, subtotal, gst, finalAmount);
     }
 
     public static double calculateSubtotal(double price, int quantity){
@@ -27,9 +28,9 @@ public class ShoppingBillCalculator {
         return subtotal + gst;
     }
 
-    public static void printBill(String productName, double subtotal, double gst, double finalAmount){
-        System.out.println("Product: " + productName);
-        System.out.println("Subtotal: " + subtotal);
+    public static void printBill(String pName, double subTotal, double gst, double finalAmount){
+        System.out.println("Product: " + pName);
+        System.out.println("Subtotal: " + subTotal);
         System.out.println("GST: " + gst);
         System.out.println("Final Amount: " + finalAmount);
     }

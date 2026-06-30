@@ -23,8 +23,8 @@ public class StudentReportCard {
     }
 
     public static int calculateTotal(int mathMarks, int englishMarks, int scienceMarks){
-        int totalMarks = mathMarks + englishMarks + scienceMarks;
-        return totalMarks;
+        int total = mathMarks + englishMarks + scienceMarks;
+        return total;
     }
 
     public static double calculatePercentage(int totalMarks){
