@@ -18,8 +18,7 @@ public class EmployeeSalaryCalculator {
     }
 
     public static double calculateHRA(double salary){
-        double hra = salary * 0.20;
-        return hra;
+        return salary * 0.20;
     }
 
     public static double calculateDA(double salary){
