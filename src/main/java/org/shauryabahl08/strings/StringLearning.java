@@ -8,7 +8,8 @@ public class StringLearning {
         String name1 = "Mohit"; // M is present at index 0
         char[] name2 = {'M', 'o', 'h', 'i', 't'};
         System.out.println(name1); // Mohit
-
+        System.out.println(name2[0]);
+        System.out.println(name1.charAt(0)); // charAt() ?
 //        for(int i = 0; i < name2.length; i++) {
 //            System.out.print(name2[i]); // Mohit
 //        }
@@ -23,6 +24,9 @@ public class StringLearning {
         // Yes
         // String are Immutable
         // means you can't modify string
+        String stuName = "Aran"; //['A', 'r', 'a', 'n']
+        stuName = "Aryan";  //['A', 'r', 'y' , 'a', 'n']
+
         String blog = "This is m blog";
         blog = "This is my blog";
 
