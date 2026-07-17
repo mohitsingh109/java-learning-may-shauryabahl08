@@ -32,7 +32,7 @@ public class StringExampleMethod {
         System.out.println("Is end with 132: " + phoneNumber.endsWith("132"));
 
         // Find the index of a character in a string
-        // 7. indexOf() -> it retuen the index
+        // 7. indexOf() -> it retuen the index (-1 not found)
         String email = "msingh@gmail.com";
         System.out.println("Index of @: " + email.indexOf("@"));
 
@@ -60,5 +60,31 @@ public class StringExampleMethod {
         String userName = "     Aman   ";
         userName = userName.trim();
         System.out.println(userName);
+
+        //12. split() --> convert string to string array based on the split pattern(, " ")
+        String userNames = "Mohit,Aryan,Aman";
+        String[] users = userNames.split(","); // ["Mohit", "Aryan", "Aman"]
+        for(String u: users) { //for each loop
+            System.out.println(u);
+        }
+
+        //13. == vs .equals()
+        // use == only with primitive data type
+        // Other than primitive data type use .equals() method
+        String name1 = "Mohit"; // H.No 102
+        String name2 = new String("Mohit"); // H.No 102
+        System.out.println("Name1: " + name1 );
+        System.out.println("Name2: " + name2 );
+        if(name1 == name2) { // it compares the memory address (in RAM)
+            System.out.println("Both are same");
+        } else {
+            System.out.println("Both are different");
+        }
+
+        if(name1.equals(name2)) { // it compares the data of the string
+            System.out.println("Both are same using equals");
+        } else {
+            System.out.println("Both are different using equals");
+        }
     }
 }
