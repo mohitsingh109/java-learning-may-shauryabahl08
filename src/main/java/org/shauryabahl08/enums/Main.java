@@ -17,3 +17,8 @@ public class Main {
         }
     }
 }
+
+// Mon
+// Monday
+// Mon-day
+// Mon day

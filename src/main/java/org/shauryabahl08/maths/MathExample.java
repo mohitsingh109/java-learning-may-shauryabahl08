@@ -40,6 +40,8 @@ public class MathExample {
         }
 
         // Generate a number from 1 to 10
+        //0.9999 * 10 --> 9.999 --> 9 + 1
+        //0 * 10 --> 0 --> 0 + 1 --> 1
         int number = (int)(Math.random() * 10) + 1;
         System.out.println(number);
 

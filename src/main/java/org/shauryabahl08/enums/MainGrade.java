@@ -16,5 +16,11 @@ public class MainGrade {
         // ordinal() --> return the index/postion of the enum value
         Grade g = Grade.F;
         System.out.println("Ordinal of " + g + " is: " + g.ordinal());
+
+        Grade[] grades = Grade.values();
+
+        for(int i = 0; i < grades.length; i++) {
+            System.out.println(grades[i]);
+        }
     }
 }
