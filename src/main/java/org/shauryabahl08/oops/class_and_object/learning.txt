@@ -1,0 +1,43 @@
+# Class & Object
+
+# Characteristics --> variables
+Phone:
+
+Brand
+color
+price
+ram
+storage
+...
+
+# Behaviour --> Function
+Make a call
+Send a message
+Play music
+Use the internet
+
+
+# If your school has 500 student
+will you create 500 different java program?
+Ans: No
+
+Instead, we can create one template
+Template A4 sheet of paper
+- name
+- age
+- rool number
+- ...more
+
+behaviour:
+study()
+play()
+That template is called class in java
+
+
+Template has no existence?
+if you have 500 template all are empty?
+you don't have any student in your school, right?
+Yes
+
+By filing the template with data, we can create a student
+create a student object
