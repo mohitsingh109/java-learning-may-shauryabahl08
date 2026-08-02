@@ -21,6 +21,9 @@ public class StudentWithoutClassAndObject {
         int[] age = new int[10];
         int[] rollNumber = new int[10];
 
+        // I want to search all student with name start with S
+        // your job is to return the student data
+
         name[0] = "Mohit";
         age[0] = 25;
         rollNumber[0] = 35;
