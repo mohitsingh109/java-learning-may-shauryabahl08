@@ -1,0 +1,43 @@
+/**
+ *
+ * Bank Account
+ * --------------
+ * Account No
+ *
+ * Balance
+ *
+ * PIN
+ *
+ * --------------
+ *
+ * Deposit()
+ *
+ * Withdraw()
+ *
+ * Check Balance()
+ */
+
+// Iy anyone can change the balance directly is it safe?
+// No
+
+// Why?
+// Anyone can steal money
+// Data become incorrect
+// Anyone can check my balance
+
+//Idea: We want out data to be protected
+
+
+What is encapsulation?
+It's a process of hiding object data and allowing control though function/method
+
+
+// 500 Students in a school
+// Each Student has a name, roll number, marks, and age
+// All student belongs to same school
+
+// Should we store school name 500 time?
+// No
+// if we do that that's a waste of memory
+// static keyword come in the picture
+// to use class variable instead of instance variable
