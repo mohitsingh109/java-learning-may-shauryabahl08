@@ -17,17 +17,22 @@ public class BankAccount {
         return balance;
     }
 
+    public BankAccount(String accountHolder, double balance) {
+        this.accountHolder = accountHolder;
+        this.balance = balance;
+    }
+
 
     //Setter function
-    public void setBalance(double value) {
-        // validate user?
-        // password/otp
-        // you enter the otp & verified
-        if(value > 0) {
-            balance = value;
-        } else {
-            System.out.println("Invalid Balance");
-        }
-    }
+//    public void setBalance(double value) {
+//        // validate user?
+//        // password/otp
+//        // you enter the otp & verified
+//        if(value > 0) {
+//            balance = value;
+//        } else {
+//            System.out.println("Invalid Balance");
+//        }
+//    }
 }
 

@@ -2,6 +2,7 @@ package org.shauryabahl08.oops.class_and_object.bank_account;
 
 public class BankService {
 
+    // class function
     public static void main(String[] args) {
         BankAccount[] bankAccounts = new BankAccount[3];
 
