@@ -1,0 +1,58 @@
+Student:
+- name
+- age
+- roll number
+- ...more
+- study()
+
+Teacher:
+- name
+- age
+- subject
+- ...more
+- teach()
+
+Principal:
+
+HouseKeeper
+
+...more
+
+Should we duplicate code?
+- No, we should not duplicate code
+
+What are the problem?
+- duplication of code
+- hard to manage
+- adding new feature is hard
+- deletion a field is hard
+
+What is the solution?
+- Inheritance
+
+What is inheritance?
+- Inheritance is a mechanism in which one class acquires
+  the property of another class.
+
+- Common class --> All other class inherit from it
+- Parent ---> Child class
+
+Person:
+- name
+- age
+Person(name, age) {}
+Person() {}
+
+Student --> extends Person
+- roll number
+Student(name, age, rollNumber) {
+    super(name, age)
+}
+
+Teacher --> extends Person
+- subject
+Teacher() {
+   super()
+}
+
+super() --> call parent class constructor
