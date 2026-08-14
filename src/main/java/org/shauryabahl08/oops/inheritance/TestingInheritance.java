@@ -18,3 +18,8 @@ public class TestingInheritance {
         System.out.println("Subject: " + t1.getSubject());
     }
 }
+
+//  Student s1 = new Student("John", 20, "12345");
+
+// Constructor call will be from child to parent
+// Instance variable initialize will from parent to child

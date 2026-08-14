@@ -5,8 +5,9 @@ public class Teacher extends Person {
     private String subject;
 
     public Teacher(String name, int age, String subject) {
-        super(name, age); // we use super to init the parent instance variables
+        super(name, age); // calling parent constructor to init the value
         this.subject = subject;
+        System.out.println("Teacher constructor is called");
     }
 
     public String getSubject() {
