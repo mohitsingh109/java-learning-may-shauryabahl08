@@ -11,7 +11,7 @@ public class Person {
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
-        System.out.println("Person constructor is called");
+        //System.out.println("Person constructor is called");
     }
 
     public String getName() {
@@ -30,6 +30,13 @@ public class Person {
         this.age = age;
     }
 
+    // What is method overriding
+    public void display() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        //??
+    }
+
 //    public String getAddress() {
 //        return address;
 //    }
@@ -37,4 +44,6 @@ public class Person {
 //    public void setAddress(String address) {
 //        this.address = address;
 //    }
+
+
 }

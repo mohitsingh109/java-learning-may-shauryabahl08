@@ -7,7 +7,15 @@ public class Teacher extends Person {
     public Teacher(String name, int age, String subject) {
         super(name, age); // calling parent constructor to init the value
         this.subject = subject;
-        System.out.println("Teacher constructor is called");
+        //System.out.println("Teacher constructor is called");
+    }
+
+    @Override
+    public void display() {
+        System.out.println("===========Teacher========");
+        super.display();
+        System.out.println("Subject: " + subject);
+        System.out.println("=========================");
     }
 
     public String getSubject() {
