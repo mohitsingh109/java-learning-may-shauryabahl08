@@ -1,4 +1,4 @@
-package org.shauryabahl08.oops.polymorphism.completime;
+package org.shauryabahl08.oops.polymorphism.compiletime;
 
 public class Calculator {
 
@@ -9,8 +9,8 @@ public class Calculator {
     // I want a function that add three int
     // I want a function that sub two double
 
-    // Method overloading
-
+    // Method overloading == compile time poly
+    // Function with same name but different argument is called Method overloading
     public static int add(int a, int b) {
         return a + b;
     }

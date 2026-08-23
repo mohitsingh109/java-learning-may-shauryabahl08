@@ -1,0 +1,38 @@
+# Run Time:
+
+The reference decides what you can access, but the actual
+object decides which overridden method runs
+
+
+Imagin you are using a food delivery app
+
+You click: PAY NOW
+
+You don't care how payment happens
+
+it could be:
+UPI
+Credit Card
+Debit Card
+Wallet
+
+For app perspective, the operation is simply PAY
+
+But each payment method performs the operation differently
+
+               Payment
+ UPI          CARD            Wallet
+ pay()        pay()           pay()
+ UPI          CARD            Wallet
+
+ Is the action is different?
+ No all the pay()
+
+ Is the implementation different?
+ Yes
+
+ That the problem polymorphism help us to solve
+
+
+ What is common between all these classes?
+ pay()

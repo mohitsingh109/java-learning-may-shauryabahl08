@@ -1,4 +1,4 @@
-package org.shauryabahl08.oops.polymorphism.completime;
+package org.shauryabahl08.oops.polymorphism.compiletime;
 
 public class MathMain {
 
@@ -16,6 +16,9 @@ public class MathMain {
 
         System.out.println(Calculator.add(a, b));
 
+
+
+
         // Goal 2:
         // add two float number
         float aa = 10.4f;
@@ -25,6 +28,8 @@ public class MathMain {
         // Goal 3:
         // add three int number
         System.out.println(Calculator.add(1, 2, 3));
+
+        System.out.println(Calculator.add(1, 2, 3, 4));
 
         // display()
         // diaplay() --> firstname, lastname, age, address
