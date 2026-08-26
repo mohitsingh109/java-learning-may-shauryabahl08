@@ -16,9 +16,6 @@ public class MathMain {
 
         System.out.println(Calculator.add(a, b));
 
-
-
-
         // Goal 2:
         // add two float number
         float aa = 10.4f;

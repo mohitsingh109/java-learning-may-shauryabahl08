@@ -6,7 +6,7 @@ public class PaymentMain {
 
         // The Normal Way
 
-        Payment payment1 = new UPIPayment();
+        Payment payment1 = new UPIPayment("test@hdfc.in");
         test(payment1);
         Payment payment2 = new CardPayment();
         test(payment2);
