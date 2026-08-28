@@ -53,6 +53,8 @@ public class ArrayExample {
             }
         }
 
+
+
         return -1; // this will run only if numer not found
     }
 }
