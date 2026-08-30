@@ -16,6 +16,7 @@ public class Faculty extends User {
     public void setDepartment(String department) {
         this.department = department;
     }
+
     @Override
     public void displayWelcomeMessage(){
         System.out.println("Welcome" + getName() + "! You are teaching 3 courses.");
