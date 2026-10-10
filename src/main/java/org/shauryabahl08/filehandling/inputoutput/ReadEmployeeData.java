@@ -35,8 +35,8 @@ public class ReadEmployeeData {
                 System.out.println("Name: " + name + ", Designation: " + designation + ", Age: " + age + ", Salary: " + salary);
 
                 // Employee employee = new Employee(name, designation, age, salary);
-                scanner.close();
             }
+            scanner.close(); // closing the file
         } catch(FileNotFoundException fe) {
             System.out.println("File not found");
         }
