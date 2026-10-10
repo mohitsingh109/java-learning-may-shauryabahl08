@@ -5,6 +5,8 @@ public class TestingInheritance {
     public static void main(String[] args) {
         Student s1 = new Student("John", 20, "12345");
         s1.display();
+        System.out.println(s1.getName());
+
         //s1.setAddress("Bla Bal 1");
 
 //        System.out.println("Name: " + s1.getName());
@@ -13,6 +15,7 @@ public class TestingInheritance {
 
         Teacher t1 = new Teacher("Mohit", 20, "Java");
         t1.display();
+        System.out.println(t1.getName());
         //How you can fix it?
         //t1.setAddress("Bla Bal 1");
 

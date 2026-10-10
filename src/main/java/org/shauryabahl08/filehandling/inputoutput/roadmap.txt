@@ -1,0 +1,25 @@
+I/O --> Input/Output
+In java: I/O is a file handling (read & write data to a file)
+
+what type of files?
+1. .txt (College)
+2. .csv (Industry)
+3. .xlsm (Industry)
+4. .json (Industry)
+
+    Topic                     What you will learn
+1. I/O mental model          How to read and write data to a file
+2. File & Scanner class      How to read data from a file
+3. Parsing data into java    Convert data from file into java
+   class object
+
+
+Topic: 1
+Input means data comes into your program.
+Output means your program sends data somewhere (console, file, etc.)
+
+Input (txt, scanner class) --> Processing (Logic) --> Output (txt, console, etc.)
+
+Topic: 2
+Scanner will be used to take user input
+File represent a file path then scanner will be used to read data from that file.

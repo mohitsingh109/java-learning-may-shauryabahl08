@@ -1,6 +1,6 @@
 package org.shauryabahl08.oops.constructor;
 
-public class User {
+public class User extends Object {
 
     private String name;
 
@@ -54,4 +54,15 @@ public class User {
             this.age = age;
         }
     }
+
+    public static void fun() {
+        //age is not accessible here because it's an instance variable and fun is a static method
+        //System.out.println(age); // ??
+    }
 }
+
+// s1
+// s2
+
+// s2 == s1 (Java error) -- No (where it is stored in your RAM)
+// s2.equals(s1) // compare the content

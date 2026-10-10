@@ -14,15 +14,4 @@ public class UPIPayment extends Payment {
         System.out.println("Processing payment using UPI..");
     }
 
-    public void send() {
-        System.out.println("Processing payment using UPI..");
-    }
-
-    public String getUpiId() {
-        return upiId;
-    }
-
-    public void setUpiId(String upiId) {
-        this.upiId = upiId;
-    }
 }

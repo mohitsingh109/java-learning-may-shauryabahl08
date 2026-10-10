@@ -20,5 +20,5 @@ public class Student extends User {
    @Override
     public void displayWelcomeMessage(){
        System.out.println("Welcome" + getName() + "! You have 4 courses enrolled.");
-   }
+    }
 }

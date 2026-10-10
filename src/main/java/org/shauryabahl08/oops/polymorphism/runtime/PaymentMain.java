@@ -5,13 +5,15 @@ public class PaymentMain {
     public static void main(String[] args) {
 
         // The Normal Way
-
+        // Parent can hold child object
+        // reverse is not allowed
         Payment payment1 = new UPIPayment("test@hdfc.in");
-        test(payment1);
+        test(payment1); //
         Payment payment2 = new CardPayment();
         test(payment2);
         Payment payment3 = new WalletPayment();
         test(payment3);
+
 
         // What is the Reference type/Data type?
         // Payment -- Yes
@@ -30,7 +32,10 @@ public class PaymentMain {
     }
 
     public static void test(Payment payment) {
-        payment.pay();
+        payment.pay(); //
+        // payment.foo();
+        // any function that is specific to child class?
+        // do you know what is the object type of payment?
         //payment.send(); -- No
         // do you know which pay() it will call?
     }
