@@ -21,7 +21,7 @@ public class ReadAnnouncements {
             // hasNextLine() method will return true if there is a next line in the file
             // nextLine() method will return the next line in the file
 
-            while (scanner.hasNextLine()) {
+            while (scanner.hasNextLine()) { // true or false
                 String line = scanner.nextLine();
                 // processing the line
                 System.out.println(line);

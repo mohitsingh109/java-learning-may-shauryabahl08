@@ -51,7 +51,7 @@ public class Employee {
         String name = input.nextLine(); // Mohit Singh
         String details = input.nextLine(); // Software Engineer, 1450000.00, 6
         String bio = input.nextLine();
-        Scanner scanner = new Scanner(details);
+        Scanner scanner = new Scanner(details); // reading a string using scanner
         scanner.useDelimiter(", ");
         String role = scanner.next();
         double annualSalary = scanner.nextDouble();
