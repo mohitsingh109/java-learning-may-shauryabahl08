@@ -8,3 +8,5 @@ public class InvalidAgeException extends RuntimeException {
         super(msg);
     }
 }
+
+// has a relation ==> composition
